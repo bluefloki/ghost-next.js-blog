@@ -5,12 +5,7 @@
 
 	export const load: Load = async ({ params }) => {
 		try {
-			const post = await (api as GhostAPI).posts.read(
-				{ slug: params.slug },
-				{
-					fields: 'title, html, created_at, feature_image'
-				}
-			);
+			const post = await (api as GhostAPI).posts.read({ slug: params.slug });
 			return {
 				props: {
 					post: post
@@ -30,6 +25,17 @@
 
 	export let post: any;
 </script>
+
+<svelte:head>
+	<title>{post.meta_title}</title>
+	<meta name="description" content={post.meta_description} />
+	<meta name="twitter:title" content={post.twitter_title} />
+	<meta name="twitter:image" content={post.twitter_image} />
+	<meta name="twitter:description" content={post.twitter_description} />
+	<meta property="og:title" content={post.og_title} />
+	<meta property="og:image" content={post.og_image} />
+	<meta property="og:description" content={post.og_description} />
+</svelte:head>
 
 <div class="p-8 md:px-16 md:py-8 w-full">
 	<Navbar />

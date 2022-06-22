@@ -29,6 +29,14 @@
 	export let posts: any;
 </script>
 
+<svelte:head>
+	<title>SoloFounderHere</title>
+	<meta
+		name="description"
+		content="Hello 👋 I am eflat. I am a solo founder and I write about the founder journey (+ whatever else I find fascinating). I build my products in public on Twitter."
+	/>
+</svelte:head>
+
 <div class="p-8 md:px-16 md:py-8">
 	<section class="h-screen" id="home">
 		<Navbar />

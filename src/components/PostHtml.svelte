@@ -3,12 +3,14 @@
 </script>
 
 <div id="content">
-	{@html content}
+	<article>
+		{@html content}
+	</article>
 </div>
 
 <style scoped>
 	#content :global(p) {
-		margin: 3rem 0;
+		margin-bottom: 3rem;
 		font-size: 1.125rem;
 	}
 
@@ -26,8 +28,9 @@
 	}
 
 	#content :global(h3) {
-		margin: 1rem 0;
-		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+		padding: 0;
+		font-size: 1.6rem;
 		font-weight: 900;
 		line-height: normal;
 	}
