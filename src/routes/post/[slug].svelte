@@ -32,6 +32,8 @@
 	<meta name="twitter:title" content={post.twitter_title} />
 	<meta name="twitter:image" content={post.twitter_image} />
 	<meta name="twitter:description" content={post.twitter_description} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@solofounderhere" />
 	<meta property="og:title" content={post.og_title} />
 	<meta property="og:image" content={post.og_image} />
 	<meta property="og:description" content={post.og_description} />
