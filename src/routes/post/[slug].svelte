@@ -22,8 +22,14 @@
 	import Navbar from 'src/components/Navbar.svelte';
 	import PostHtml from 'src/components/PostHtml.svelte';
 	import { styles } from 'src/styles';
+	import { onMount } from 'svelte';
 
 	export let post: any;
+
+	onMount(() => {
+		let commentoClasslist = Array.from((window as any).commento.classList);
+		if (commentoClasslist.length === 0) (window as any).commento.main();
+	});
 </script>
 
 <svelte:head>
@@ -37,8 +43,6 @@
 	<meta property="og:title" content={post.og_title} />
 	<meta property="og:image" content={post.og_image} />
 	<meta property="og:description" content={post.og_description} />
-
-	<script defer src="https://commento.server.solofounderhere.com/js/commento.js"></script>
 </svelte:head>
 
 <div class="p-8 md:px-16 md:py-8 w-full">
