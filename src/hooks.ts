@@ -1,7 +1,8 @@
 import type { GetSession } from '@sveltejs/kit';
 
 export const getSession: GetSession = async (event) => {
-	const darkModeCookie = event.request.headers.get('cookie')?.split('=')[1];
+	const cookies = event.request.headers.get('cookie')?.split(';');
+	const darkModeCookie = cookies?.find((el) => el.includes('darkMode'))?.split('=')[1];
 
 	return {
 		darkMode: darkModeCookie ? JSON.parse(darkModeCookie as string) : false
