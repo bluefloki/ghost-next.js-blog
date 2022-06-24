@@ -57,4 +57,5 @@
 			</div>
 		</div>
 	</div>
+	<div id="commento">{''}</div>
 </div>

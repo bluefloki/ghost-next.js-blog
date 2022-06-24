@@ -1,12 +1,12 @@
 <script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
+	import type { Load, Server } from '@sveltejs/kit';
 	export const load: Load = async ({ session }) => {
 		darkMode.set((session as any).darkMode);
 		return {};
 	};
 </script>
 
-<script>
+<script lang="ts">
 	import '../styles/tailwind.css';
 	import '../styles/app.css';
 	import { darkMode } from '$lib/store';
