@@ -43,6 +43,8 @@
 	<meta property="og:title" content={post.og_title} />
 	<meta property="og:image" content={post.og_image} />
 	<meta property="og:description" content={post.og_description} />
+
+	<script defer src="https://commento.server.solofounderhere.com/js/commento.js"></script>
 </svelte:head>
 
 <div class="p-8 md:px-16 md:py-8 w-full">
