@@ -30,7 +30,7 @@
 <div class="p-8 md:px-16 md:py-8">
 	<Navbar />
 	<div class="flex flex-row items-center justify-center h-screen md:h-[80vh]">
-		<form use:form class="md:w-1/2 text-center">
+		<form use:form class="md:w-1/2 2xl:w-1/3 text-center">
 			<h3 class="text-3xl mb-6 font-black">Join the amazing monthly newsletter</h3>
 
 			<input

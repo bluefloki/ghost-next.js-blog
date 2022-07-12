@@ -41,7 +41,7 @@
 	<section class="h-screen" id="home">
 		<Navbar />
 		<div class="h-full flex flex-col items-center justify-center md:mt-16">
-			<img src="/avatar.jpg" alt="eflat avatar" class="w-24 md:w-32 rounded-full mb-6" />
+			<img src="/avatar.jpg" alt="avatar" class="w-24 md:w-32 rounded-full mb-6" />
 			<p class="text-lg md:text-xl md:w-1/2 leading-relaxed text-center">
 				Hello 👋 I am eflat. I am a solo founder and I write about the founder journey (+ whatever
 				else I find fascinating). I build my products in public on <a

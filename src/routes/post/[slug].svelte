@@ -6,6 +6,8 @@
 	export const load: Load = async ({ params }) => {
 		try {
 			const post = await (api as GhostAPI).posts.read({ slug: params.slug });
+			console.log(post);
+
 			return {
 				props: {
 					post: post
@@ -22,14 +24,8 @@
 	import Navbar from 'src/components/Navbar.svelte';
 	import PostHtml from 'src/components/PostHtml.svelte';
 	import { styles } from 'src/styles';
-	import { onMount } from 'svelte';
 
 	export let post: any;
-
-	onMount(() => {
-		let commentoClasslist = Array.from((window as any).commento.classList);
-		if (commentoClasslist.length === 0) (window as any).commento.main();
-	});
 </script>
 
 <svelte:head>
@@ -43,14 +39,12 @@
 	<meta property="og:title" content={post.og_title} />
 	<meta property="og:image" content={post.og_image} />
 	<meta property="og:description" content={post.og_description} />
-
-	<script defer src="https://commento.server.solofounderhere.com/js/commento.js"></script>
 </svelte:head>
 
 <div class="p-8 md:px-16 md:py-8 w-full">
 	<Navbar />
 	<div class="flex flex-col items-center justify-center mt-16">
-		<div class="md:w-3/4 leading-loose">
+		<div class="md:w-3/4 2xl:w-1/2 leading-loose">
 			<img src={post.feature_image} alt="feature_image" class="w-full mb-12 md:mb-24" />
 
 			<h2 class="text-4xl md:text-5xl font-black mb-12">{post.title}</h2>
@@ -65,5 +59,4 @@
 			</div>
 		</div>
 	</div>
-	<div id="commento" />
 </div>

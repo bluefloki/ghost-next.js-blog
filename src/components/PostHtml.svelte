@@ -34,4 +34,9 @@
 		font-weight: 900;
 		line-height: normal;
 	}
+
+	figcaption {
+		font-style: italic;
+		padding-bottom: 2rem;
+	}
 </style>
