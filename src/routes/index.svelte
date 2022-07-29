@@ -33,7 +33,7 @@
 	<title>SoloFounderHere</title>
 	<meta
 		name="description"
-		content="Hello 👋 I am eflat. I am a solo founder and I write about the founder journey (+ whatever else I find fascinating). I build my products in public on Twitter."
+		content="Hello 👋 I am Kazmi. I am a solo founder and I write about the founder journey (+ whatever else I find fascinating). I build my products in public on Twitter."
 	/>
 </svelte:head>
 
@@ -43,9 +43,9 @@
 		<div class="h-full flex flex-col items-center justify-center md:mt-16">
 			<img src="/avatar.jpg" alt="avatar" class="w-24 md:w-32 rounded-full mb-6" />
 			<p class="text-lg md:text-xl md:w-1/2 leading-relaxed text-center">
-				Hello 👋 I am eflat. I am a solo founder and I write about the founder journey (+ whatever
+				Hello 👋 I am Kazmi. I am a solo founder and I write about the founder journey (+ whatever
 				else I find fascinating). I build my products in public on <a
-					href="https://twitter.com/hey_eflat"
+					href="https://twitter.com/heykazmi"
 					target="_blank"
 					class={styles.link}>Twitter</a
 				>. This is my blog and I write longer, more useful content here. I also run a
